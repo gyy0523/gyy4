@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="icon/iconfont.css">
+    <link rel="stylesheet" href="post/swiper-3.3.1.min.css">
+</head>
+<body>
+    <div class="box">
+        <header>
+            <a>假日旅行</a>
+        </header>
+        <section>
+            <div class="swiper-container banner">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><img src="images/banner_02.png" alt=""></li>
+                    <li class="swiper-slide"><img src="images/banner_02.png" alt=""></li>
+                    <li class="swiper-slide"><img src="images/banner_02.png" alt=""></li>
+                    <li class="swiper-slide"><img src="images/banner_02.png" alt=""></li>
+                    <li class="swiper-slide"><img src="images/banner_02.png" alt=""></li>
+                </ul>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="list">
+                <a><b style="background: #46d265;"><i class="iconfont">&#xe68f;</i></b>热门景点</a>
+                <a><b style="background: #ff7900;"><i class="iconfont">&#xe68f;</i></b>记账簿</a>
+                <a><b style="background: #5aaaff;"><i class="iconfont">&#xe68f;</i></b>境内/境外</a>
+                <a><b style="background: #feb546;"><i class="iconfont">&#xe68f;</i></b>轮船票</a>
+                <a><b style="background: #fe645a;"><i class="iconfont">&#xe68f;</i></b>酒店</a>
+                <a><b style="background: #66cbff;"><i class="iconfont">&#xe68f;</i></b>飞机票</a>
+                <a><b style="background: #ffd33c;"><i class="iconfont">&#xe68f;</i></b>火车票</a>
+                <a><b style="background: #5bdcc8;"><i class="iconfont">&#xe68f;</i></b>行程记录</a>
+            </div>
+            <div class="menu">
+                <div class="pos">
+                    <a>
+                        <b style="color:#de8160">热销榜</b>
+                        <b>大家都爱玩</b>
+                    </a>
+                    <a><img src="images/a_05.png" alt=""></a>
+                </div>
+                <div class="pos">
+                    <a>
+                        <b style="color:#de8160">我身边</b>
+                        <b>附近有什么</b>
+                    </a>
+                    <a><img src="images/a_07.png" alt=""></a>
+                </div>
+                <div class="pos">
+                    <a>
+                        <b style="color: #64c1d3">千元出国</b>
+                        <b>周二、五开抢</b>
+                    </a>
+                    <a><img src="images/a_12.png" alt=""></a>
+                </div>
+                <div class="pos">
+                    <a>
+                        <b style="color: #64c1d3">旅游日历</b>
+                        <b>1元门票早知道</b>
+                    </a>
+                    <a><img src="images/a_13.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <a class="col"><i class="iconfont">&#xe648;</i><b>首页</b></a>
+            <a><i class="iconfont">&#xe717;</i><b>订单</b></a>
+            <a><i class="iconfont">&#xe647;</i><b>我的</b></a>
+            <a><i class="iconfont">&#xe6f5;</i><b>更多</b></a>
+        </footer>
+    </div>
+    <script src="post/swiper-3.3.1.min.js"></script>
+    <script>
+        (function(doc,win){
+            var currentWidth=doc.documentElement.clientWidth;
+            doc.documentElement.style.fontSize=currentWidth/375*50+'px';
+        })(document,window)
+        var swiper = new Swiper('.swiper-container',{
+            autoplay:1000,
+            loop:true,
+            pagination:'.swiper-pagination',
+           // paginationType:'progress',
+        })
+    </script>
+</body>
+</html>
